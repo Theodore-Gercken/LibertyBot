@@ -2,7 +2,9 @@
 
 Use the prefix "-" before any commands. (ex: "-events" for events).
 
-Invite Liberty bot: https://discord.com/oauth2/authorize?client_id=853455948848300043&scope=bot+applications.commands.
+Invite LibertyBot through the bot website:
+
+Support LibertyBot's hosting costs through the patreon:
 
 **Planned Features:**
 - Election/Candidates News (possibly a register to vote feature)
