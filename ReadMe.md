@@ -10,7 +10,6 @@ Support LibertyBot's hosting costs through the patreon:
 - Election/Candidates News (possibly a register to vote feature)
 - Who's Driving Helper
 - In-Bot Event Creation
-- Shorten Embeds
 
 **To Do Before Release**
 - Patreon (add to "links")
