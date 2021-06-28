@@ -7,7 +7,7 @@ module.exports = {
 		if (!args.length) {
 			const exampleEmbed = new Discord.MessageEmbed()
 	    .setColor(`#E5C601`)
-      .setDescription(`*You can learn more about each state party by using the state postal code with the command (ex: "lp ca" for California)*`)
+      .setDescription('*You can learn more about each state party by using the state postal code with the command (ex: `-lp ca` for California)*')
 	    .setTitle(`The Libertarian Party of America`)
 	    .setThumbnail(`https://www.lp.org/wp-content/uploads/2017/03/party_of_principle_logo.png`)
       .addFields(
