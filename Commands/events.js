@@ -8,7 +8,7 @@ module.exports = {
 			const exampleEmbed = new Discord.MessageEmbed()
 	    .setColor('#E5C601')
 	    .setTitle('Events')
-	    .setDescription('Use one of the following commands to see the events of one of our partner organizations.\n\n*You can learn more about each event by using the number with the command (ex: "events 1" for the first event)*')
+	    .setDescription('Use one of the following commands to see the events of one of our partner organizations.\n\n*You can learn more about each event by using the number with the command (ex: `-events 1` for the first event)*')
 	    .setThumbnail('https://images.pexels.com/photos/4226140/pexels-photo-4226140.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260')
 	    .addFields(
 		    { name: 'The Libertarian Youth Caucus', value: '- No Events Currently Scheduled'},
