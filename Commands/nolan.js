@@ -8,7 +8,7 @@ module.exports = {
 			const exampleEmbed = new Discord.MessageEmbed()
 	    .setColor('#E5C601')
 	    .setTitle('The Nolan Political Test')
-	    .setDescription(`Have you ever wondered where you fall on the American political spectrum? The Nolan Test can help! Just count how many of the following statements you agree with in the first set and how many you agree with in the second set. Then let me know you're ready by using the "nolan result" command.`)
+	    .setDescription(`'Have you ever wondered where you fall on the American political spectrum? The Nolan Test can help! Just count how many of the following statements you agree with in the first set and how many you agree with in the second set. Then let me know you are ready by using the `-nolan result` command.')
 	    .setThumbnail('https://images.pexels.com/photos/5775/calculator-scientific.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260')
       .addFields(
 		    { name: 'Set 1', value: '*The government should:*\n-protect absolute free speech\n-not infringe on the right to bear arms\n-treat all people (regardless of race, sex, or sexual identity) equally in all regards\n-withdraw our troops from non-defensive activites\n-stop surveilling their citizens through programs such as the NSA'},
