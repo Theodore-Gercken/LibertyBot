@@ -1,16 +1,18 @@
 # LibertyBot 
-LibertyBot is a community service project created by Theodore Gercken for libertarian discord servers. It is privacy focused, requiring no perms or data storing. It is the ultimate LP application with features to tie the libertarian internet community together on Discord.
+LibertyBot is a community service project created by Theodore Gercken for libertarian discord servers. The first version provided free access to libertarian informational commands that can make any libertarian discord server stand out to anyone who wanted to use it! You can Invite LibertyBot here (the first version).
+
+# LibertyBot 2.0
+In addition, LibertyBot 2.0 is currently under Beta Development. LibertyBot 2.0 will consist of an upgraded generic application that will be free to use and custom applications that will cost $3 a month (strictly for hosting costs) that will integrate custom server management features (such as a starboard, logging, Twitter account following, reaction roles, etc.). You can request a custom application from Theodore Gercken at t.gercken@lpac.us.
+
+View the open-sourced code here: [https://github.com/Theodore-Gercken/LibertyBot](https://github.com/Theodore-Gercken/LibertyBot)
 
 # Usage
 Use the prefix `-` before any commands. (ex: `-events` for events).
 
 Information on how to get started can be found through the `-info` command.
 
-# Invites
-Invite LibertyBot through the bot website: https://top.gg/bot/853455948848300043
-
 # Donate
-Hosting LibertyBot 24/7 costs $8 a month, so if you want to help out to make sure it keeps existing as a free resource for everyone, feel free to donate to the patreon. Any money in excess of what is needed to host LibertyBot will be donated to the Libertarian Youth Caucus or the Frontier Project. https://www.patreon.com/libertybot
+Making LibertyBot available to everyone 24/7 costs money, so if you want to help out to make sure it keeps existing, feel free to donate to the patreon! [https://www.patreon.com/libertybot](https://www.patreon.com/libertybot)
 
 # Issues & Contact
-If you have any feature suggestions please contact Theodore Gercken at contact.theodoregercken@gmail.com!
+If you have any feature suggestions please contact Theodore Gercken at [t.gercken@lpac.us!](mailto:t.gercken@lpac.us)
