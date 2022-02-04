@@ -15,4 +15,4 @@ Information on all the commands can be found through the `-info` command.
 Making LibertyBot available to everyone 24/7 costs money, so if you want to help out to make sure it keeps existing, feel free to donate to the patreon! [https://www.patreon.com/libertybot](https://www.patreon.com/libertybot)
 
 # Issues & Contact
-If you have any feature suggestions please contact Theodore Gercken at [t.gercken@lpac.us!](mailto:t.gercken@lpac.us)
+If you have any feature suggestions please contact Theodore Gercken at [t.gercken@lpac.us!](mailto:t.gercken@lpac.us) and join the support server at [https://discord.gg/CDC2BrEFdm](https://discord.gg/CDC2BrEFdm).
