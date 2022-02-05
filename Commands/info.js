@@ -1,22 +1,28 @@
-const Discord = require('discord.js');
+const { SlashCommandBuilder } = require('@discordjs/builders');
+const { MessageEmbed } = require('discord.js');
+const {google} = require("googleapis")
+const { color, logo } = require("../config.json")
 
 module.exports = {
-	name: 'info',
-	description: 'info',
-	execute(message, args) {
-		const exampleEmbed = new Discord.MessageEmbed()
-	    .setColor('#E5C601')
-	    .setTitle('Information')
-	    .setDescription('LibertyBot is a community service project created by Theodore Gercken for libertarian discord servers. It is privacy focused, requiring no perms or data storing. It is the ultimate LP application with features to tie the libertarian internet community together on Discord.\n\nUse the prefix `-` before any commands. (ex: `-events` for events)')
-	    .setThumbnail('https://i.postimg.cc/3RzDY40n/Logo.png')
-	    .addFields(
-		    { name: 'Liberty Commands', value: '-`events`: See a list of libertarian events taking place across the internet.\n-`lp`: Look up official LP links.\n-`caucuses`: Look up official LP caucus links.\n-`discords`: Join other libertarian discord servers.\n-`news`: Find libertarian news sources covering the party and politics in general.\n-`nolan`: Take the Nolan Political Test to see where you fall on the political compass.\n-`libertarianism`: Engage in a short conversation with the bot to explore the foundations of libertarian philosophy.\n-`taxation`: Learn why taxation is theft.'},
-		    { name: 'Bot Commands', value: '-`info`: Pulls up general information about the bot.\n-`links`: Pulls up all of the bots relevant links.\n-`ping`: Checks to see if the bot is still connected. It should respond with pong!'},
-        { name: 'Invite LibertyBot To Another Server!', value: `Invite the bot to another server [here](https://discord.com/oauth2/authorize?client_id=853455948848300043&scope=bot+applications.commands)\nCheck out the website [here](https://top.gg/bot/853455948848300043)`},
-	    )
-	    .setTimestamp()
-	    .setFooter('I was created by Theodore Gercken, email contact.theodoregercken@gmail.com to request a feature, report a bug/typo, or just get in touch!');
-    message.channel.send(exampleEmbed);
-
+	data: new SlashCommandBuilder()
+		.setName('info')
+		.setDescription('Find out about LibertyBot!'),
+	async execute(interaction) {
+		const auth = new google.auth.GoogleAuth({
+            keyFile: "sheets-credentials.json",
+            scopes: "https://www.googleapis.com/auth/spreadsheets",
+        });
+		const client = await auth.getClient();
+        const googleSheets = google.sheets({ version: "v4", auth: client });
+        const spreadsheetId = "1d_AGk80pukZ1Sej0jfislgafNw-1KMqG4czmltfFdzk";
+		const users = await googleSheets.spreadsheets.values.get({spreadsheetId, range: `Sheet1!D1`});
+        const embed = new MessageEmbed()
+	        .setColor(color)
+	        .setTitle('About LibertyBot!')
+            .setDescription(`This bot is the generic LibertyBot application, one of many bots designed by Theodore Gercken as a community service project for libertarian discord servers. Anyone can add this bot to their server [here](https://top.gg/bot/853455948848300043) (and if you want, you can give it 5 stars there as well), and organizations can request a custom LibertyBot with additional features and total customization. Use /feedback or email t.gercken@lpac.us to get a custom application for your server!\n\n**Total LibertyBot Users**: ${users.data.values[0][0]}\n\nMaking LibertyBot available to everyone 24/7 costs money, so if you want to help out to make sure it keeps existing, feel free to donate to the [patreon](https://www.patreon.com/libertybot)!\n\nJoin the support server [here](https://discord.gg/CDC2BrEFdm)!\n\nView LibertyBot's open sourced code [here](https://github.com/Theodore-Gercken/LibertyBot)!`)
+            .setThumbnail(logo)
+	        .setTimestamp()
+	        .setFooter({text: 'I was created by Theodore Gercken, use /feedback to request a feature, report a bug/typo, or just get in touch!'});
+		await interaction.reply({ embeds: [embed] });
 	},
 };

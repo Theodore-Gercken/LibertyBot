@@ -1,17 +1,29 @@
 {
-  "name": "LibertyBot",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "@replit/database": "^2.0.1",
-    "db": "^3.3.1",
-    "discord.js": "^12.5.3"
-  }
+    "name": "libertarian-party-veteran-caucus-bot",
+    "version": "1.0.0",
+    "description": "Libertarian Party Veteran Caucus Bot is a community service project created by Theodore Gercken for the Libertarian Party Veteran Caucus discord. Custom designed for the organization, it integrates features requested by the caucus leadership.",
+    "main": "index.js",
+    "dependencies": {
+        "@discordjs/builders": "^0.11.0",
+        "@discordjs/rest": "^0.2.0-canary.0",
+        "discord-api-types": "^0.26.1",
+        "discord.js": "^13.6.0",
+        "googleapis": "^92.0.0",
+        "long": "^5.2.0",
+        "twit": "^2.2.11"
+    },
+    "devDependencies": {
+        "node": "^16.13.2"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node index.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Theodore-Gercken/libertarian-party-veteran-caucus-bot.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "MIT"
 }
