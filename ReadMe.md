@@ -1,5 +1,5 @@
 # LibertyBot 
-LibertyBot is a community service project created by Theodore Gercken for libertarian discord servers. It provides free access to libertarian informational commands that can make any libertarian discord server stand out to anyone who wants to use it! This is currently the second version of the application. You can Invite LibertyBot [here](https://top.gg/bot/853455948848300043)
+LibertyBot is a community service project created by Theodore Gercken for libertarian discord servers. It provides free access to libertarian informational commands that can make any libertarian discord server stand out to anyone who wants to use it! This is currently the second version of the application. You can Invite LibertyBot (and learn more about it) [here](libertybot.theodoregercken.com/)
 
 View the open-sourced code here!
 
