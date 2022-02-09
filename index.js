@@ -35,6 +35,14 @@ client.once('ready', async () => {
             requestBody: { values: [[client.guilds.cache.reduce((acc, guild) => acc + guild.memberCount, 0)]] },
         });        
     }, 600000);
+    var user = await client.users.fetch("666430201546407949")
+		const embed = new MessageEmbed()
+            .setColor(color)
+            .setTitle(`LibertyBot has (re)started!`)
+            .setThumbnail(logo)
+            .setTimestamp()
+            .setFooter({text: 'I was created by Theodore Gercken, use /feedback to request a feature, report a bug/typo, or just get in touch!'});
+	user.send({ embeds: [embed] })
 });
 
 client.on('interactionCreate', async interaction => {
